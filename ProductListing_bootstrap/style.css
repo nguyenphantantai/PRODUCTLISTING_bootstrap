@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fontAwesome {
+    font-family: Helvetica, 'FontAwesome', sans-serif;
+}
+#main{
+    width: 1440px;
+    margin-left: 45px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.header_menu{
+   display: flex;
+   justify-content: space-around;
+   width: 25%;
+   color: gray;
+}
+
+.header_menu div a{
+    text-decoration: none; 
+    line-height: 50px;
+    /* Căn cho độ rộng của hover */
+    padding: 20px 20px;
+    /* Căn chỉnh độ rộng cho từng thẻ a */
+    border-radius: 5px;
+}
+
+.header_menu div:hover a{
+    color: white;
+    background-color: greenyellow;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+}
+
+.header__search .header__search-input {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    outline: none;
+}
+
+/* Chữ nhạt */
+.header__search .header__search-input::placeholder,
+#tag .header__search-input::placeholder{
+    opacity: 0.2;
+}
+#txt{
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+#review{
+    position: relative;
+    display: flex;
+}
+
+#title{
+    position: absolute;
+    text-align: left;
+    margin-left: 130px;
+    margin-top: 100px;
+}
+
+#title p{
+    font-size: 20px;
+    color: rgb(95, 93, 93);
+}
+#title h2{
+    font-size: 55px;
+    color: rgb(47, 43, 43);
+}
+
+#tag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+#tag_menu > li{
+    display: inline-block;
+    /* Căn cho tag_menu nằm ngang  */
+}
+
+#tag_menu > li > a {
+    color: rgb(21, 173, 21);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tag_menu li a {
+    text-decoration: none; 
+    line-height: 50px;
+    /* Căn cho độ rộng của hover */
+    padding: 0 70px;
+    /* Căn chỉnh độ rộng cho từng thẻ a */
+    display: block;
+    border-radius: 5px;
+}
+
+#tag_menu > li:hover > a{
+    color: white;
+    background-color: chartreuse;
+}
+
+.tag__search .tag__search-input {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    outline: none;
+    border-top: solid white;
+    border-right: solid white;
+    border-left: solid white;
+}
+.tag__search .tag__search-input::placeholder,
+#tag .tag__search-input::placeholder{
+    opacity: 0.5;
+}
+.tag__search{
+    display: flex;
+    margin-right: 10%;
+}
+
+.tag__search .sort_by button{
+    padding: 10px 16px;
+    margin-left: 20px;
+    opacity: 1;
+    border: 1px solid white;
+    color: gray;
+    cursor: pointer;
+}
+
+
+#container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hang1, .hang2, .hang3{
+    display: flex;
+}
+
+.hang1 #hang1_div,
+.hang2 #hang1_div,
+.hang3 #hang1_div{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.hang1 #hang1_div #div1,
+.hang2 #hang1_div #div1,
+.hang3 #hang1_div #div1{
+    display: flex;
+    justify-content: left;
+}
+#img1{
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#page{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page a{    
+    color: black;
+    margin:20px;
+    text-decoration: none;
+    line-height: 35px;
+    /* Căn cho độ rộng của hover */
+    padding: 0 10px;
+    /* Căn chỉnh độ rộng cho từng thẻ a */
+    display: block;
+    border-radius: 5px;
+}
+
+#page > img:hover{
+    cursor: pointer;
+}
+
+#page > div:hover > a,
+#page > img:hover{
+    color: rgb(0, 244, 28);
+    background-color: rgb(235, 245, 224);
+} 
+#north{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(42, 41, 59);
+    display: flex;
+    color: white;
+}
+
+#north #left{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.about div,
+.help div,
+.concact div{
+    margin-top: 30px;
+}
+
+.about a,
+.help a{
+   text-decoration: none;
+   color: white;
+}
+
+#north #right{
+    width: 50%;
+}
+
+#right .litter{
+    margin-top: 30px; 
+    padding: 10px;
+    color: white;
+    background-color: rgb(42, 41, 59); 
+    border: 1px solid white;
+    border-top-left-radius:8px ;
+    border-bottom-left-radius:8px ;
+}
+#right .submit{
+    padding: 11px;
+    margin-left: -6px;
+    border: 1px solid rgb(42, 41, 59);
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#right input,
+#right input::placeholder{
+    color: white;
+}
+
+#right label input{
+    background-color: rgb(34, 189, 137);
+}
+
+#right .end{
+    margin-top: 30px;
+}
